@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./strorage/Css/main.css" />
+    <link rel="stylesheet" href="./strorage/Css/base.css" />
+    <link rel="stylesheet" href="./strorage/Css/food.css" />
+    <link rel="stylesheet" href="./strorage/Css/basic.css">
+    <link rel="stylesheet" href="./strorage/Css/responsive.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/icon main/themify-icons/themify-icons.css"
+    />
+    <script src="https://kit.fontawesome.com/2e41b6dd76.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="header-list">
+        <div class="left">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+        </div>
+        <div class="right">
+          <h4>Hotline:0123456789</h4>
+        </div>
+      </div>
+
+      <div id="header">
+        <div class="logo">
+          <h1>King Boom</h1>
+          <h5>Nhà hàng thượng hạng</h5>
+        </div>
+        <div id="menu">
+          <ul class="nav ul-none">
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li>
+              <a href="./ThucPham.html">Sản phẩm</a>
+            </li>
+            <li><a href="./Blog.html">Blog</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+          </ul>
+          <!-- <div class="btn-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="input-form" placeholder=" " />
+            <label for="email" class="form-label">Tìm kiếm sản phẩm</label>
+          </div> -->
+        </div>
+        <div id="action">
+          <div class="auth-form-asside">
+            <div class="auth-form-help">
+              <a
+                href="#"
+                class="auth-form-help-link auth-form-help-forgot js-form-register"
+                >Đăng kí</a
+              >
+              <span class="auth-form-help--sperate"></span>
+              <a href="#" class="auth-form-help-link js-form-login"
+                >Đăng nhập</a
+              >
+            </div>
+          </div>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="alert-info">
+        <h2>Nhà hàng thượng hạng</h2>
+        <p> <h3>Mục thực phẩm</h3> sẽ liên tục cập nhật những ưu đãi giá mới liên tục cho quý khách hàng</p>
+      </div>
+
+
+
+    <!-- category (danh mục) -->
+      <div class="app--container">
+        <div class="grid">
+          <div class="grid-row">
+            <div class="grid-column-2">
+              <nav class="category">
+                <h3 class="category-heading">
+                  <i class="category-heading-icon fa-solid fa-list-ul"></i>
+                  Danh mục
+                </h3>
+
+                <ul class="category-list">
+                  <li class="category-item category-item-active">
+                    <a href="" class="category-item-link">Sản phẩm</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="" class="category-item-link">Món hải sản</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="" class="category-item-link">Món cơm các loại</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="" class="category-item-link">Món điểm tâm</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid-column-10">
+              <!-- Content -->
+      <div id="wp-products">
+        <div class="filter-list">
+          <span class="filter-label">Sắp xếp theo</span>
+          <button class="filter-btn btn">Phổ biến</button>
+          <button class="filter-btn btn btn-primary">Mới nhất</button>
+          <button class="filter-btn btn">Bán chạy</button>
+
+          <div class="select-input">
+            <span class="select-label">Giá</span>
+            <i class="select-input-icon ti-angle-down"></i>
+            <ul class="select-input-list">
+              <li class="select-input-item">
+                <a href="" class="select-input-link">Giá: Thấp đến cao</a>
+              </li>
+              <li class="select-input-item">
+                <a href="" class="select-input-link">Giá: Cao đến thấp</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="select-input">
+            <span class="select-label">Chọn loại thực phẩm</span>
+            <i class="select-input-icon ti-angle-down"></i>
+            <ul class="select-input-list">
+              <li class="select-input-item">
+                <a href="" class="select-input-link">Thực phẩm: Đồ ăn</a>
+              </li>
+              <li class="select-input-item">
+                <a href="" class="select-input-link">Thực phẩm: Đồ uống</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filter-page">
+            <span class="filter-page-num">
+              <span class="filter-page-current">1</span>/14
+            </span>
+
+            <div class="filter-page-control">
+              <a href="" class="filter-page-btn">
+                <i class="ti-angle-left"></i>
+              </a>
+
+              <a href="" class="filter-page-btn">
+                <i class="ti-angle-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="list-products">
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_An/BanhCanhNamPho.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img src="./assets/images/Do_An/product_1.png" alt="sq-sample4" />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img src="./assets/images/Do_An/BanhGoi.png" alt="sq-sample4" />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img src="./assets/images/Do_Uong/comdua.png" alt="sq-sample4" />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_Uong/ChocolateNong.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_An/CaChinhNuon.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_An/BanhSinhTo.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_Uong/nuoc-ep-trai-cay.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img src="./assets/images/Do_An/GoiDuDu.png" alt="sq-sample4" />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_Uong/LassiXoai.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_An/MucTrunghapGung.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="content-product">
+            <div class="image">
+              <img
+                src="./assets/images/Do_An/BanhSinhTo.png"
+                alt="sq-sample4"
+              />
+              <div class="icons">
+                <a href="#"><i class="ion-star"></i></a>
+                <a href="#"> <i class="ion-share"></i></a>
+                <a href="#"> <i class="ion-search"></i></a>
+              </div>
+              <a href="#" class="add-to-cart">Add to Cart</a>
+            </div>
+            <figcaption>
+              <h2>Bánh Canh</h2>
+              <p>Mô tả sản phẩm.</p>
+              <div class="price"><s>$24.00</s>$19.00</div>
+              <div class="rating">
+                <i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star"></i><i class="ion-ios-star"></i
+                ><i class="ion-ios-star-outline"></i>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="list-page">
+          <div class="item">
+            <a href="">1</a>
+          </div>
+          <div class="item">
+            <a href="./Thucpham2.html">2</a>
+          </div>
+          <div class="item">
+            <a href="./Thucpham3.html">3</a>
+          </div>
+          <div class="item">
+            <a href="./Thucpham4.html">4</a>
+          </div>
+        </div>
+      </div>
+    </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOOTER MAIN -->
+      <div id="footer">
+        <div class="row">
+          <div class="col logo">
+            <h1>King Boom</h1>
+            <h5>Nhà hàng thượng hạng</h5>
+            <p>
+              Cảm ơn quý khách hàng đã tin tưởng và ủng hộ các dịch vụ và món ăn
+              tại nhà hàng và shop bán hàng của chúng tôi
+            </p>
+          </div>
+          <div class="col">
+            <h3>
+              Office
+              <div class="underline"><span></span></div>
+            </h3>
+            <p>Địa chỉ: Nhóm 17 Lt03</p>
+            <p>Thành viên: Anh, Hùng, Đạt</p>
+            <p class="email-id">abc123@gmail.com</p>
+            <h4>+84 - 0123456789</h4>
+          </div>
+          <div class="col">
+            <h3>
+              Nội dung
+              <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>
+              Liên hệ
+              <div class="underline"><span></span></div>
+            </h3>
+            <form>
+              <i class="fa-solid fa-envelope" style="margin-right: 10px"></i>
+              <input type="email" placeholder="Enter your email id" required />
+              <button type="submit">
+                <i class="fa-regular fa-chevron-right"></i>
+              </button>
+            </form>
+            <div class="social-icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Easy Tutorials © 2022 - All Rights Reserver</p>
+      </div>
+      </div>
+  </div>
+
+  <!-- Modal Login , Register form -->
+    <div class="modal js-modal">
+      <div class="modal-overlay"></div>
+      <!-- Register form -->
+      <div class="modal-body">
+        <div class="auth-form-container js-modal-container">
+          <div class="modal-headr">
+            <div class="auth-form">
+              <div class="auth-form-header">
+                <h3 class="auth-form-heading">Đăng ký</h3>
+                <span class="auth-form-switch-btn">Đăng nhập</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-form-heading-gg">
+            <h2 class="heading-gg">Sign up</h2>
+            <button class="signup-social">
+              <i class="fa-brands fa-google sign-social-icon"></i>
+              <span class="signup-social-text">Sign up width Google</span>
+            </button>
+            <div class="signup-or"><span>Or</span></div>
+          </div>
+
+          <div class="auth-form-from">
+            <div class="auth-form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label for="email" class="auth-form-label">Email or Phone</label>
+            </div>
+            <div class="auth-form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label for="password" class="auth-form-label"
+                >Nhập mật khẩu mới</label
+              >
+            </div>
+            <div class="auth-form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label for="Email or Phone" class="auth-form-label"
+                >Nhập lại mật khẩu</label
+              >
+            </div>
+          </div>
+          <div class="auth-form-asside">
+            <p class="auth-form-policy-text">
+              Bằng việc đăng ký bạn đồng ý với Nhà hàng về
+              <a href="" class="auth-form-text-link">Điều khoản dịch vụ</a> &
+              <a href="" class="auth-form-text-link">Chính sách bảo mật</a>
+            </p>
+          </div>
+
+          <div class="auth-form-controls">
+            <button class="btn btn-contro-back js-close">TRỞ LẠI</button>
+            <button class="btn btn--primary">ĐĂNG KÝ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login form -->
+    <div class="modalLogin js-modal-login">
+      <div class="modal-body">
+        <div class="auth-form-container js-modal-container-login">
+          <div class="modal-headr">
+            <div class="auth-form">
+              <div class="auth-form-header">
+                <h3 class="auth-form-heading">Đăng Nhập</h3>
+                <span class="auth-form-switch-btn">Đăng ký</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="auth-form-heading-gg">
+            <h2 class="heading-gg">Login</h2>
+            <button class="signup-social">
+              <i class="fa-brands fa-google sign-social-icon"></i>
+              <span class="signup-social-text">login width Google</span>
+            </button>
+            <div class="signup-or"><span>Or</span></div>
+          </div>
+
+          <div class="auth-form-from">
+            <div class="auth-form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label for="email" class="auth-form-label">Email or Phone</label>
+            </div>
+            <div class="auth-form-group">
+              <input type="text" class="form-input" placeholder=" " />
+              <label for="password" class="auth-form-label"
+                >Nhập mật khẩu của bạn</label
+              >
+            </div>
+          </div>
+          <div class="auth-form-asside">
+            <div class="auth-form-help">
+              <a href="" class="auth-form-help-link auth-form-help-forgot"
+                >Quên mật khẩu</a
+              >
+              <span class="auth-form-help--sperate"></span>
+              <a href="" class="auth-form-help-link">Cần trợ giúp</a>
+            </div>
+          </div>
+
+          <div class="auth-form-controls">
+            <button class="btn btn-contro-back js-close-login">TRỞ LẠI</button>
+            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./strorage/JS/comment.js"></script>
+    <script src="./strorage/JS/main.js"></script>
+    <script src="./strorage/JS/base.js"></script>
+  </body>
+</html>

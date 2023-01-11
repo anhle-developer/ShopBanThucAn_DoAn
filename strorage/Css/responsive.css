@@ -1,0 +1,102 @@
+@media only screen and (max-width: 46.1875em) {
+  #main {
+    display: inline-block;
+  }
+
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #menu ul {
+    font-size: 26px;
+  }
+
+  .auth-form-help {
+    font-size: 26px;
+  }
+
+  #action .cart {
+    font-size: 30px;
+  }
+
+  .nav-heading {
+    margin-top: 100px;
+  }
+
+  #banner {
+    margin-top: 180px;
+  }
+
+  .navigation {
+  }
+
+  #comment {
+    width: 100%;
+  }
+
+  #footer {
+    position: relative;
+    margin-top: 50%;
+  }
+
+  #footer .social-icons i {
+    width: 30px;
+    height: 30px;
+  }
+
+  #wp-products .content-product {
+    max-width: 370px;
+  }
+
+  .modal .modal-body,
+  .modalLogin .modal-body {
+    max-width: 800px;
+  }
+
+  .auth-form-heading {
+    font-size: 2.3rem;
+  }
+
+  .heading-gg {
+    font-size: 60px;
+  }
+
+  .auth-form-label {
+    font-size: 25px;
+  }
+
+  .form-input {
+    height: 83px;
+  }
+
+  .signup-or,
+  .auth-form-help-link {
+    font-size: 30px;
+  }
+
+  .signup-social {
+    font-size: 25px;
+  }
+
+  .auth-form-policy-text {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .auth-form-controls .btn {
+    height: 50px;
+    min-width: 160px;
+  }
+
+  .auth-form-switch-btn {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 1216px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+}
